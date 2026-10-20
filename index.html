@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jay-are B. Mesias | Computer Engineering Student</title>
+  <meta name="description" content="Portfolio of Jay-are B. Mesias - 4th Year Computer Engineering Student at ICCT Colleges Cainta Main Campus." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;JM /&gt;</span>
+        <span class="logo-text">Jay-are Mesias</span>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Education</a>
+        <a href="#tech-stack" class="nav-link">Tech Stack</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume / Contact Button -->
+        <a href="#contact" class="btn btn-outline btn-sm">Resume / CV</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Toggle Navigation">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-profile">
+          <div class="avatar-wrapper">
+            <img src="profile.jpg" alt="Jay-are B. Mesias" class="avatar-img" />
+          </div>
+          <div class="hero-meta">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for opportunities</span>
+            </div>
+            <h1 class="hero-name">Jay-are B. Mesias</h1>
+            <p class="hero-title">Computer Engineering Student</p>
+            <p class="hero-location">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>ICCT Main Campus Cainta, Rizal, Philippines</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="https://github.com/messi-jay" target="_blank" rel="noopener" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            GitHub Profile
+          </a>
+          <a href="#tech-stack" class="btn btn-outline">View Tech Stack</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am <strong>Jay-are B. Mesias</strong>, 22 years old, a 4th-year <strong>Bachelor of Science in Computer Engineering</strong> student at ICCT Colleges, Cainta Main Campus.
+            </p>
+            <p>
+              As a dedicated learner, I continuously expand my skills by using diverse resources—including in-depth technical documentation, online video tutorials, developer forums, and modern AI tools. This allows me to quickly learn new frameworks, solve technical problems, and build reliable projects.
+            </p>
+          </div>
+
+          <!-- Professional Snapshot Grid -->
+          <div class="snapshot-card">
+            <h3 class="snapshot-header">DEVELOPER SNAPSHOT</h3>
+            <div class="snapshot-grid">
+              <div class="snapshot-item">
+                <div class="snapshot-icon">🎓</div>
+                <div>
+                  <div class="snapshot-label">Education</div>
+                  <div class="snapshot-value">4th Year Computer Engineering &bull; ICCT Cainta Main Campus</div>
+                </div>
+              </div>
+
+              <div class="snapshot-item">
+                <div class="snapshot-icon">👤</div>
+                <div>
+                  <div class="snapshot-label">Profile</div>
+                  <div class="snapshot-value">22 Years Old &bull; Cainta, Rizal</div>
+                </div>
+              </div>
+
+              <div class="snapshot-item">
+                <div class="snapshot-icon">🚀</div>
+                <div>
+                  <div class="snapshot-label">Group Role</div>
+                  <div class="snapshot-value">DevOps &amp; Deployment Specialist</div>
+                </div>
+              </div>
+
+              <div class="snapshot-item">
+                <div class="snapshot-icon">🤖</div>
+                <div>
+                  <div class="snapshot-label">Current Studies</div>
+                  <div class="snapshot-value">AI &amp; Automation Systems</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Learning Journey Section -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">History</span>
+          <h2 class="section-title">Education &amp; Learning Journey</h2>
+          <p class="section-subtitle">Academic foundations, programming language study, and resource-driven continuous upskilling.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Formal Degree & School Learnings -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Bachelor of Science in Computer Engineering</h3>
+                  <span class="timeline-org">ICCT Colleges &mdash; Main Campus Cainta</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Undertaking comprehensive academic coursework and hands-on laboratory training in core Computer Engineering disciplines. School learnings include computer systems architecture, operating systems internals, data communications, network protocols (TCP/IP), discrete mathematics, digital logic design, microcontrollers, and computer hardware troubleshooting. Actively applying theoretical engineering concepts to collaborative projects and practical lab experiments.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Computer Engineering</span>
+                <span class="tag">Computer Systems</span>
+                <span class="tag">Networking &amp; Protocols</span>
+                <span class="tag">Hardware Diagnostics</span>
+                <span class="tag">Operating Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Language Study & Software Development -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Programming Languages &amp; Software Studies</h3>
+                  <span class="timeline-org">Academic &amp; Self-Directed Curriculum</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Committed to studying fundamental and practical programming languages both in school and independently. Deepening proficiency across JavaScript, Java, C#, Python, SQL, and HTML5/CSS3. Building solid knowledge in object-oriented programming (OOP) principles, relational database management (RDBMS), data structures, and algorithmic logic, while practicing version control workflows with Git and GitHub.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">JavaScript &amp; Java</span>
+                <span class="tag">C# &amp; Python</span>
+                <span class="tag">SQL Databases</span>
+                <span class="tag">OOP Principles</span>
+                <span class="tag">Git &amp; GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Tutorials, AI & Resource-Driven Upskilling -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Continuous Learning: Tutorials, AI &amp; Technical Resources</h3>
+                  <span class="timeline-org">Proactive Research &amp; Independent Upskilling</span>
+                </div>
+              </div>
+              <p class="timeline-desc">
+                Accelerating knowledge acquisition beyond the classroom by actively utilizing diverse modern resources. Regularly studying through in-depth developer video tutorials, interactive coding platforms, official documentation, and technical forums. Extensively integrating AI-assisted development tools (prompt engineering, AI-driven code analysis, automated debugging, and architectural research) to rapidly master new technologies, solve challenging engineering problems, and explore DevOps, CI/CD, and automation concepts.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Technical Tutorials</span>
+                <span class="tag">AI-Assisted Learning</span>
+                <span class="tag">Official Documentation</span>
+                <span class="tag">Prompt Engineering</span>
+                <span class="tag">Automation &amp; DevOps Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section (Inspired by s1mplee67.github.io) -->
+    <section id="tech-stack" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Tech Stack</h2>
+          <p class="section-subtitle">( select tab to filter )</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter" id="skills-filter">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="languages">&lt;/&gt; Languages</button>
+          <button class="filter-btn" data-category="web">Web</button>
+          <button class="filter-btn" data-category="tools">Tools</button>
+          <button class="filter-btn" data-category="learning">Learning</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Languages & Basics -->
+          <div class="skill-card" data-category="languages">
+            <span class="skill-prefix">&lt;/&gt;</span>
+            <span class="skill-name">Java</span>
+          </div>
+          <div class="skill-card" data-category="languages">
+            <span class="skill-prefix">&lt;/&gt;</span>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-card" data-category="languages web">
+            <span class="skill-prefix">&lt;/&gt;</span>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card" data-category="languages web">
+            <span class="skill-prefix">&lt;/&gt;</span>
+            <span class="skill-name">HTML</span>
+          </div>
+          <div class="skill-card" data-category="languages web">
+            <span class="skill-prefix">&lt;/&gt;</span>
+            <span class="skill-name">CSS</span>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card" data-category="tools">
+            <span class="skill-prefix">⚙</span>
+            <span class="skill-name">Git</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <span class="skill-prefix">⚙</span>
+            <span class="skill-name">GitHub</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <span class="skill-prefix">⚙</span>
+            <span class="skill-name">VS Code</span>
+          </div>
+          <div class="skill-card" data-category="tools">
+            <span class="skill-prefix">⚙</span>
+            <span class="skill-name">Data Management</span>
+          </div>
+
+          <!-- Learning -->
+          <div class="skill-card" data-category="learning">
+            <span class="skill-prefix">🤖</span>
+            <span class="skill-name">AI (Learning)</span>
+          </div>
+          <div class="skill-card" data-category="learning">
+            <span class="skill-prefix">⚡</span>
+            <span class="skill-name">Automation (Learning)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Reach out for opportunities, collaboration, or inquiries.</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Direct Details Card -->
+          <div class="contact-card">
+            <h3>Direct Contact</h3>
+            <p class="contact-lead">Feel free to message or email me directly.</p>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">✉</span>
+              <div class="contact-item-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value" id="email-address">Bebejayare@gmail.com</span>
+              </div>
+              <button class="copy-btn" id="copy-email-btn" title="Copy email address">
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">💬</span>
+              <div class="contact-item-info">
+                <span class="contact-label">Messenger</span>
+                <span class="contact-value">jayaremesias.16</span>
+              </div>
+              <a href="https://m.me/jayaremesias.16" target="_blank" rel="noopener" class="copy-btn" style="text-decoration:none;">Open</a>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">👤</span>
+              <div class="contact-item-info">
+                <span class="contact-label">Facebook Profile</span>
+                <span class="contact-value">jayaremesias.16</span>
+              </div>
+              <a href="https://facebook.com/jayaremesias.16" target="_blank" rel="noopener" class="copy-btn" style="text-decoration:none;">Visit</a>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item-icon">📍</span>
+              <div class="contact-item-info">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Cainta, Rizal, Philippines</span>
+              </div>
+            </div>
+
+            <div class="social-links-grid">
+              <a href="https://github.com/messi-jay" target="_blank" rel="noopener" class="social-btn">
+                <span>GitHub ↗</span>
+              </a>
+
+              <a href="https://facebook.com/jayaremesias.16" target="_blank" rel="noopener" class="social-btn">
+                <span>Facebook ↗</span>
+              </a>
+
+              <a href="https://m.me/jayaremesias.16" target="_blank" rel="noopener" class="social-btn">
+                <span>Messenger ↗</span>
+              </a>
+
+              <a href="mailto:Bebejayare@gmail.com" class="social-btn">
+                <span>Email ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formal Message Form -->
+          <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); window.location.href='mailto:Bebejayare@gmail.com?subject=' + encodeURIComponent(document.getElementById('subject').value) + '&body=' + encodeURIComponent('From: ' + document.getElementById('name').value + ' (' + document.getElementById('email').value + ')\n\n' + document.getElementById('message').value);">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="e.g. John Doe" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="name@company.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Project inquiry or opportunity" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Hello Jay-are, I came across your portfolio..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Send Message via Email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clean Formal Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="copyright">&copy; <span id="current-year"></span> Jay-are B. Mesias. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
